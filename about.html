@@ -1,21 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>About Us - JM Clearances</title>
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <!-- Header / Nav -->
   <header>
-    <nav aria-label="Primary">
+    <nav>
       <ul class="menu">
         <li><a href="index.html">Home</a></li>
-        <li><a href="about.html" class="active">About Us</a></li>
+        <li><a href="about.html">About Us</a></li>
         <li>
           <a href="services.html">What We Do</a>
-          <ul class="submenu">
+          <ul class="dropdown">
             <li><a href="services.html#house">House Clearances</a></li>
             <li><a href="services.html#office">Office Clearances</a></li>
             <li><a href="services.html#bereavement">Bereavement Clearances</a></li>
@@ -26,35 +25,48 @@
     </nav>
   </header>
 
-  <!-- Main content -->
-  <section class="section">
-    <h2>About JM Clearances</h2>
-
-    <div class="card">
+  <main>
+    <section class="about-intro">
+      <h1>About JM Clearances</h1>
       <p>
-        We are a family-run clearance company serving Cheshire and the surrounding
-        areas. We provide house clearances, office clearances, and bereavement
-        clearances with care and compassion.
+        We are a family-run clearance company serving Cheshire and the surrounding areas. 
+        Our goal is to provide stress-free, eco-friendly, and compassionate clearance services for homes, offices, and sensitive situations such as bereavements.
       </p>
-      <p>
-        Our team works responsibly, donating reusable items to charity and ensuring
-        that all waste is disposed of in an eco-friendly way. We aim to recycle as much
-        as possible to protect our environment.
-      </p>
-    </div>
+    </section>
 
-    <div class="card">
-      <p>
-        Whether you need a full property cleared, an office prepared for new tenants,
-        or respectful help with a bereavement clearance, JM Clearances will support
-        you every step of the way.
-      </p>
-    </div>
-  </section>
+    <section class="about-points">
+      <h2>Why Choose Us</h2>
+      <ul>
+        <li><strong>1. Who We Are:</strong> A small, dedicated team focused on providing a personal touch to every clearance.</li>
+        <li><strong>2. Our Mission:</strong> To make clearances easy, affordable, and eco-conscious. Compassion first, landfill last.</li>
+        <li><strong>3. Responsible Disposal:</strong> Recycling and donations always come before landfill. We work with charities to give items a second life.</li>
+        <li><strong>4. Peace of Mind:</strong> We leave properties clear, tidy, and ready for their next chapter.</li>
+      </ul>
+    </section>
 
-  <!-- Footer -->
+    <section class="about-team">
+      <p>
+        “We started JM Clearances to help families, landlords, and businesses in our community by offering a 
+        <strong>reliable, compassionate, and eco-friendly</strong> service. 
+        We’re proud to serve Cheshire with a difference.”
+      </p>
+      <p><em>— JM Clearances Team</em></p>
+    </section>
+
+    <section class="reviews-form">
+      <h2>Leave Us a Review</h2>
+      <form>
+        <input type="text" placeholder="Your Name" required>
+        <input type="text" placeholder="Your Location" required>
+        <textarea placeholder="Write your review here..." required></textarea>
+        <button type="submit">Submit Review</button>
+      </form>
+      <p>Your feedback helps us improve and lets others know they can trust JM Clearances.</p>
+    </section>
+  </main>
+
   <footer>
-    <p>© 2025 JM Clearances</p>
+    <p>&copy; 2025 JM Clearances</p>
   </footer>
 </body>
 </html>
