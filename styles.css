@@ -1,149 +1,72 @@
 /* ===== Reset ===== */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: Arial, sans-serif;
-}
-
-/* ===== Body ===== */
-body {
-  line-height: 1.6;
-  background-color: #f4f4f9;
-  color: #333;
-}
+*{margin:0;padding:0;box-sizing:border-box;font-family:Arial,Helvetica,sans-serif}
+body{line-height:1.6;background:#f4f4f9;color:#333}
 
 /* ===== Header & Navigation ===== */
-header {
-  background-color: #004080;
-  padding: 10px 0;
-}
+header{background:#0b4ea2;padding:10px 0}
+.menu{display:flex;justify-content:center;gap:28px;list-style:none}
+.menu li{position:relative}
+.menu a{color:#fff;text-decoration:none;padding:10px 14px;border-radius:4px;display:block}
+.menu a:hover{background:#2966b8}
+/* Dropdown */
+.submenu{display:none;position:absolute;top:40px;left:0;background:#0b4ea2;list-style:none;min-width:200px;border-radius:6px;overflow:hidden;z-index:1000}
+.submenu li a{padding:10px 14px}
+.menu li:hover .submenu{display:block}
 
-.menu {
-  display: flex;
-  justify-content: center;
-  list-style: none;
+/* ===== Hero (now ALWAYS readable even without an image) ===== */
+.hero{
+  min-height:280px;
+  padding:60px 20px;
+  text-align:center;
+  color:#fff;
+  background:linear-gradient(0deg,rgba(0,0,0,.25),rgba(0,0,0,.25)),
+             linear-gradient(135deg,#0b4ea2,#0f6bd6);
+  /* If you later add hero-image.jpg it will show under the gradient */
+  background-image:
+     linear-gradient(0deg,rgba(0,0,0,.25),rgba(0,0,0,.25)),
+     url('hero-image.jpg'), 
+     linear-gradient(135deg,#0b4ea2,#0f6bd6);
+  background-size:cover,cover,cover;
+  background-position:center,center,center;
 }
+.hero h1{font-size:2.2rem;margin-bottom:10px}
+.hero p{font-size:1.1rem;max-width:780px;margin:0 auto 18px}
+.button{display:inline-block;background:#ffb000;color:#1a1a1a;padding:12px 22px;border-radius:6px;font-weight:700;text-decoration:none}
+.button:hover{background:#e39e00}
 
-.menu li {
-  position: relative;
-  margin: 0 20px;
-}
+/* ===== Generic containers ===== */
+.section{max-width:1100px;margin:40px auto;padding:0 16px}
+.section h2{color:#0b4ea2;text-align:center;margin-bottom:18px}
 
-.menu a {
-  color: #fff;
-  text-decoration: none;
-  padding: 10px 15px;
-  display: block;
-  transition: background 0.3s;
+/* ===== Cards (services & reviews) ===== */
+.grid{display:flex;flex-wrap:wrap;gap:22px;justify-content:center}
+.card,.review-card{
+  background:#fff;border-radius:10px;padding:18px 20px;
+  box-shadow:0 6px 18px rgba(0,0,0,.08);max-width:520px;flex:1 1 300px
 }
+.card h3{text-align:center;color:#0b4ea2;margin-bottom:10px}
 
-.menu a:hover {
-  background-color: #0066cc;
-  border-radius: 4px;
-}
-
-/* ===== Dropdown ===== */
-.submenu {
-  display: none;
-  position: absolute;
-  top: 40px;
-  left: 0;
-  background-color: #004080;
-  list-style: none;
-  padding: 0;
-  min-width: 180px;
-  border-radius: 4px;
-  z-index: 1000;
-}
-
-.submenu li {
-  margin: 0;
-}
-
-.menu li:hover .submenu {
-  display: block;
-}
-
-/* ===== Hero ===== */
-.hero {
-  background: url('hero-image.jpg') no-repeat center center/cover;
-  height: 350px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #fff;
-  text-align: center;
-  font-size: 2em;
-  font-weight: bold;
-}
-
-/* ===== Sections ===== */
-section h2 {
-  text-align: center;
-  margin-bottom: 20px;
-  color: #004080;
-}
-
-/* ===== Cards (Services & Reviews) ===== */
-.card, .review-card {
-  background-color: #fff;
-  padding: 20px;
-  margin: 15px;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-}
-
-.service-container, .review-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  max-width: 1200px;
-  margin: 0 auto 50px;
-}
+/* ===== Reviews ===== */
+#reviews{background:#eef4ff;padding:40px 0}
+.review-card p{font-style:italic;margin-bottom:8px}
+.review-card .by{font-weight:700;color:#0b4ea2}
 
 /* ===== Contact ===== */
-.contact-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 30px;
-  padding: 20px;
+.contact-wrap{display:flex;flex-wrap:wrap;gap:28px;justify-content:center}
+.contact-panel,form{
+  background:#fff;border-radius:10px;padding:20px;box-shadow:0 6px 18px rgba(0,0,0,.08);
+  flex:1 1 320px;max-width:520px
 }
-
-.contact-container form, .contact-info {
-  background-color: #fff;
-  padding: 20px;
-  border-radius: 8px;
-  flex: 1 1 300px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-}
-
-input, textarea {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 15px;
-  border-radius: 4px;
-  border: 1px solid #ccc;
-}
-
-button {
-  background-color: #004080;
-  color: #fff;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-button:hover {
-  background-color: #0066cc;
-}
+form input,form textarea{width:100%;padding:12px;border:1px solid #cfd6e0;border-radius:8px;margin-bottom:14px;font-size:1rem;background:#fafbff}
+form textarea{min-height:130px;resize:vertical}
+form button{background:#0b4ea2;color:#fff;border:none;padding:12px 18px;border-radius:8px;cursor:pointer}
+form button:hover{background:#2966b8}
 
 /* ===== Footer ===== */
-footer {
-  text-align: center;
-  background-color: #004080;
-  color: #fff;
-  padding: 15px 0;
+footer{text-align:center;background:#0b4ea2;color:#fff;padding:16px;margin-top:40px}
+
+/* ===== Responsive ===== */
+@media (max-width:768px){
+  .hero{padding:48px 16px}
+  .hero h1{font-size:1.8rem}
 }
