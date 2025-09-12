@@ -1,52 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Get in touch with JM Clearances for house, office, and bereavement clearances across Chester, Warrington, and Northwich. Contact us today for a free no-obligation quote.">
-    <title>Contact Us - JM Clearances</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Contact JM Clearances | Free Quotes Available</title>
+  <meta name="description" content="Get in touch with JM Clearances for a free quote on house, bereavement or office clearances in Chester and surrounding areas.">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>JM Clearances</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="what-we-do.html">Services</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="contact.html" class="active">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <section class="container">
-        <h2>Contact Us</h2>
-        <p>Contact <strong>JM Clearances</strong> today for a free, no-obligation quote. Our friendly team is ready to assist you with your clearance needs.</p>
+  <nav class="navbar">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="what-we-do.html">Services</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+  </nav>
 
-        <div style="background: #f4faff; padding: 15px; border-radius: 6px; margin-bottom: 20px;">
-            <p><span style="font-size: 1.2em;">📍</span> <strong>Location:</strong> Chester & Surrounding Areas</p>
-            <p><span style="font-size: 1.2em;">📞</span> <strong>Phone:</strong> <a href="tel:07593135373">07593 135373</a></p>
-            <p><span style="font-size: 1.2em;">✉️</span> <strong>Email:</strong> <a href="mailto:contact@jmclearances.co.uk">contact@jmclearances.co.uk</a></p>
-        </div>
+  <header class="hero">
+    <div class="inner">
+      <h1>Contact JM Clearances</h1>
+      <p>Call or email us for a free, no-obligation quote.</p>
+      <a class="cta" href="contact.html">Get a Free Quote</a>
+      <a class="call-now" href="tel:07523135373">📞 Call Now</a>
+    </div>
+  </header>
 
-        <h3>Send Us a Message</h3>
-        <form action="mailto:contact@jmclearances.co.uk" method="post" enctype="text/plain">
-            <label for="name">Name:</label><br>
-            <input type="text" id="name" name="name" required><br><br>
-
-            <label for="email">Email:</label><br>
-            <input type="email" id="email" name="email" required><br><br>
-
-            <label for="message">Message:</label><br>
-            <textarea id="message" name="message" rows="5" required></textarea><br><br>
-
-            <button type="submit">Send</button>
-        </form>
+  <main class="container">
+    <section class="contact-card">
+      <h2 class="section-title">Get in touch</h2>
+      <p><strong>Phone:</strong> <a href="tel:07523135373">07523 135373</a></p>
+      <p><strong>Email:</strong> <a href="mailto:jmclearances@gmail.com">jmclearances@gmail.com</a></p>
+      <p><strong>Areas we serve:</strong> Chester, Warrington, Northwich, Wrexham, Ellesmere Port and surrounding areas.</p>
+      <p><strong>Opening hours:</strong> Mon–Sat 8:00–18:00 (Closed Sunday)</p>
     </section>
 
-    <footer>
-        <p>&copy; 2025 JM Clearances. All rights reserved.</p>
-    </footer>
+    <section class="contact-card">
+      <h2 class="section-title">Send us a message</h2>
+      <!-- Note: this is a simple mailto form; to accept messages reliably consider Formspree or Netlify Forms -->
+      <form action="mailto:jmclearances@gmail.com" method="post" enctype="text/plain">
+        <label for="name">Name</label>
+        <input id="name" name="name" type="text" required>
+
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" required>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <button type="submit">Send</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© 2025 JM Clearances | <a href="tel:07523135373">07523 135373</a> | <a href="mailto:jmclearances@gmail.com">jmclearances@gmail.com</a></p>
+  </footer>
 </body>
 </html>
