@@ -5,33 +5,51 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>What We Do - JM Clearances</title>
   <link rel="stylesheet" href="style.css">
-  <script>
-    function toggleMenu() {
-      document.querySelector("nav ul").classList.toggle("showing");
-    }
-  </script>
+  <script defer src="menu.js"></script>
 </head>
 <body>
+  <!-- Header -->
   <header>
+    <div class="logo">JM Clearances</div>
     <nav>
-      <div class="logo">JM Clearances</div>
-      <div class="menu-toggle" onclick="toggleMenu()">☰</div>
-      <ul>
+      <button class="menu-toggle">☰</button>
+      <ul class="menu">
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About Us</a></li>
-        <li><a href="what-we-do.html">What We Do</a></li>
+        <li><a href="what-we-do.html" class="active">What We Do</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
   </header>
 
-  <div class="container">
-    <h1>What We Do</h1>
-    <p>We offer house clearances, office clearances, rubbish removal, garden waste removal, and much more. Our friendly team is here to help.</p>
-  </div>
+  <!-- Services Section -->
+  <section class="hero">
+    <div class="hero-text">
+      <h1>What We Do</h1>
+    </div>
+  </section>
 
+  <section class="content">
+    <h2>Our Services</h2>
+    <p>
+      We provide a wide range of clearance services to make your life easier.
+    </p>
+    <ul>
+      <li>🏠 Full House Clearances</li>
+      <li>🌿 Garden Waste Removal</li>
+      <li>🏢 Office and Commercial Clearances</li>
+      <li>🗑️ Rubbish and Junk Removal</li>
+      <li>🛠️ General Property Clearance Services</li>
+    </ul>
+    <p>
+      Whether it’s a single item or a full property clearance, our team is
+      ready to help.
+    </p>
+  </section>
+
+  <!-- Footer -->
   <footer>
-    <p>&copy; 2025 JM Clearances. All rights reserved.</p>
+    <p>© 2025 JM Clearances. All rights reserved.</p>
   </footer>
 </body>
 </html>
