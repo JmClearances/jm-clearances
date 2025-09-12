@@ -3,43 +3,66 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>What We Do - JM Clearances</title>
+  <title>What We Do | JM Clearances</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <!-- Header with Dropdown Menu -->
   <header>
-    <nav class="navbar">
-      <div class="logo">JM Clearances</div>
-      <ul class="nav-links">
+    <h1>JM Clearances</h1>
+    <nav>
+      <ul class="menu">
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About Us</a></li>
-        <li><a href="what-we-do.html" class="active">What We Do</a></li>
+        <li>
+          <a href="what-we-do.html" class="active">Services ▼</a>
+          <ul class="dropdown">
+            <li><a href="#house">House Clearance</a></li>
+            <li><a href="#office">Office Clearance</a></li>
+            <li><a href="#garden">Garden Clearance</a></li>
+            <li><a href="#rubbish">Rubbish Removal</a></li>
+          </ul>
+        </li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
   </header>
 
-  <section class="page-header">
-    <h1>What We Do</h1>
+  <!-- Page Header -->
+  <section class="hero small-hero">
+    <h2>Our Services</h2>
   </section>
 
-  <section class="services">
-    <div class="service">
-      <h2>🏠 House Clearance</h2>
-      <p>Full and partial house clearances, removing furniture, appliances, and unwanted items responsibly.</p>
-    </div>
+  <!-- Services Content -->
+  <section class="page">
+    <h3 id="house">🏠 House Clearance</h3>
+    <p>
+      Whether you’re moving, renovating, or dealing with a bereavement, we provide 
+      sensitive and professional full or partial house clearance services. 
+      We ensure unwanted items are removed efficiently and disposed of responsibly.
+    </p>
 
-    <div class="service">
-      <h2>🏢 Office Clearance</h2>
-      <p>Professional removal of desks, chairs, electronics, and office waste to keep your workspace clear.</p>
-    </div>
+    <h3 id="office">🏢 Office Clearance</h3>
+    <p>
+      We clear office furniture, equipment, and general waste quickly to help 
+      businesses get back to work with minimal disruption. Perfect for relocations 
+      and refurbishments.
+    </p>
 
-    <div class="service">
-      <h2>🌿 Garden Clearance</h2>
-      <p>We take care of garden waste, old sheds, and outdoor clutter — leaving your space clean and tidy.</p>
-    </div>
+    <h3 id="garden">🌿 Garden Clearance</h3>
+    <p>
+      From overgrown gardens to piles of green waste, our garden clearance service 
+      helps you reclaim your outdoor space. We remove branches, soil, rubble, and more.
+    </p>
+
+    <h3 id="rubbish">🗑️ Rubbish Removal</h3>
+    <p>
+      We handle all types of rubbish removal — household junk, unwanted furniture, 
+      builders’ waste, and more. No job is too big or small.
+    </p>
   </section>
 
+  <!-- Footer -->
   <footer>
     <p>© 2025 JM Clearances | Call: 07523 135373 | Email: jmclearances@gmail.com</p>
   </footer>
