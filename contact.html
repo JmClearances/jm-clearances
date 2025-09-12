@@ -7,12 +7,11 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
   <!-- Navigation -->
   <nav class="navbar">
     <div class="logo">JM Clearances</div>
-    <div class="menu-toggle" id="menu-toggle">&#9776;</div>
-    <ul class="nav-links" id="nav-links">
+    <span class="menu-toggle">☰</span>
+    <ul class="nav-links">
       <li><a href="index.html">Home</a></li>
       <li><a href="about.html">About Us</a></li>
       <li><a href="what-we-do.html">What We Do</a></li>
@@ -20,19 +19,22 @@
     </ul>
   </nav>
 
-  <section class="content">
+  <!-- Page Content -->
+  <main>
     <h1>Contact Us</h1>
-    <p>We’d love to hear from you! Whether you have a question about our services, need a quote, or want to book a clearance, feel free to get in touch.</p>
-    <ul>
-      <li><strong>Phone:</strong> 01234 567 890</li>
-      <li><strong>Email:</strong> info@jmclearances.co.uk</li>
-      <li><strong>Address:</strong> 123 High Street, Your Town, UK</li>
-    </ul>
-  </section>
+    <p>If you’d like to book a clearance or get a free quote, please reach us on:</p>
+    <p><strong>Phone:</strong> 01234 567890</p>
+    <p><strong>Email:</strong> info@jmclearances.co.uk</p>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 JM Clearances | All Rights Reserved</p>
+  </footer>
 
   <script>
-    document.getElementById("menu-toggle").addEventListener("click", function() {
-      document.getElementById("nav-links").classList.toggle("active");
+    document.querySelector(".menu-toggle").addEventListener("click", () => {
+      document.querySelector(".nav-links").classList.toggle("active");
     });
   </script>
 </body>
