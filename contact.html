@@ -3,13 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact Us | JM Clearances</title>
+  <title>Contact Us - JM Clearances</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <!-- Header -->
   <header>
+    <h1>JM Clearances</h1>
     <nav>
-      <h1>JM Clearances</h1>
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="what-we-do.html">What We Do</a></li>
@@ -18,44 +19,46 @@
     </nav>
   </header>
 
-  <main class="container">
-    <section class="intro">
-      <h2>Contact Us</h2>
-      <p>We’d love to hear from you! Please use the form below or reach us directly.</p>
-    </section>
+  <!-- Hero -->
+  <section class="hero">
+    <h2>Contact Us</h2>
+    <p>We’d love to hear from you. Get in touch today!</p>
+  </section>
 
-    <section class="contact-info">
-      <div class="card">
-        <h3>📞 Phone</h3>
-        <p><a href="tel:+441234567890">+44 1234 567 890</a></p>
-      </div>
-      <div class="card">
-        <h3>📧 Email</h3>
-        <p><a href="mailto:info@jmclearances.co.uk">info@jmclearances.co.uk</a></p>
-      </div>
-      <div class="card">
-        <h3>📍 Address</h3>
-        <p>123 High Street, Birmingham, UK</p>
-      </div>
-    </section>
+  <!-- Contact Info Cards -->
+  <section class="contact-info">
+    <div class="card">
+      <h3>📍 Address</h3>
+      <p>123 Clearance Street<br>Manchester, UK</p>
+    </div>
+    <div class="card">
+      <h3>📞 Phone</h3>
+      <p><a href="tel:07123456789">07123 456 789</a></p>
+    </div>
+    <div class="card">
+      <h3>✉️ Email</h3>
+      <p><a href="mailto:info@jmclearances.co.uk">info@jmclearances.co.uk</a></p>
+    </div>
+  </section>
 
-    <section class="contact-form">
-      <h2>Send us a message</h2>
-      <form action="mailto:info@jmclearances.co.uk" method="POST" enctype="text/plain">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required>
+  <!-- Contact Form -->
+  <section class="contact-form">
+    <h2>Send Us a Message</h2>
+    <form action="mailto:info@jmclearances.co.uk" method="post" enctype="text/plain">
+      <label for="name">Your Name</label>
+      <input type="text" id="name" name="name" required>
 
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
+      <label for="email">Your Email</label>
+      <input type="email" id="email" name="email" required>
 
-        <label for="message">Message:</label>
-        <textarea id="message" name="message" rows="5" required></textarea>
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
 
-        <button type="submit">Send</button>
-      </form>
-    </section>
-  </main>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
 
+  <!-- Footer -->
   <footer>
     <p>&copy; 2024 JM Clearances. All rights reserved.</p>
   </footer>
