@@ -12,73 +12,48 @@ body {
   color: #333;
 }
 
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
 /* ===== Header & Navigation ===== */
 header {
   background-color: #004080;
-  padding: 10px 0;
+  padding: 6px 0;
 }
 
 .menu {
   display: flex;
   justify-content: center;
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .menu li {
-  position: relative;
-  margin: 0 10px; /* tighter spacing */
+  margin: 0 10px;
 }
 
 .menu a {
   color: #fff;
   text-decoration: none;
-  padding: 10px 15px;
+  padding: 8px 12px;
   display: block;
 }
 
 .menu a:hover,
-.menu a:focus {
-  background-color: #003366;
+.menu a.active {
+  background: #003366;
   border-radius: 5px;
-}
-
-/* Submenu */
-.submenu {
-  display: none;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  background-color: #004080;
-  list-style: none;
-  min-width: 180px;
-  z-index: 1000;
-}
-
-.submenu li a {
-  padding: 10px;
-}
-
-.menu li:hover .submenu,
-.menu li:focus-within .submenu {
-  display: block;
 }
 
 /* ===== Hero Section ===== */
 .hero {
-  background: linear-gradient(to right, #004080, #0073e6);
+  background: linear-gradient(135deg, #004080, #0078d7);
   color: #fff;
   text-align: center;
-  padding: 80px 20px;
+  padding: 60px 20px;
 }
 
 .hero h1 {
-  font-size: 2.5rem;
-  margin-bottom: 20px;
+  font-size: 2.2rem;
+  margin-bottom: 10px;
 }
 
 .hero p {
@@ -86,49 +61,82 @@ header {
   margin-bottom: 20px;
 }
 
-.button {
-  background-color: #ffb000;
-  color: #1a1a1a;
-  padding: 12px 24px;
+.hero .btn {
+  background: #ffcc00;
+  color: #333;
+  padding: 12px 20px;
   border-radius: 6px;
+  text-decoration: none;
   font-weight: bold;
-  display: inline-block;
+  transition: background 0.3s;
 }
 
-.button:hover {
-  background-color: #e6a500;
+.hero .btn:hover {
+  background: #e6b800;
 }
 
 /* ===== Sections ===== */
-.section {
+section {
   padding: 40px 20px;
-  max-width: 1100px;
+  max-width: 1000px;
   margin: 0 auto;
 }
 
-.section h2 {
+section h2 {
   text-align: center;
-  margin-bottom: 20px;
   color: #004080;
+  margin-bottom: 20px;
 }
 
-.review-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 20px;
-}
-
-.review {
+.card {
   background: #fff;
   padding: 20px;
+  margin: 15px 0;
   border-radius: 8px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
-.review .author {
+/* ===== Forms Styling ===== */
+form {
+  max-width: 600px;
+  margin: 0 auto 30px;
+  text-align: center;
+}
+
+form input,
+form textarea,
+form select {
+  width: 100%;
+  max-width: 100%;
+  padding: 10px 12px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+form textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+form button,
+form input[type="submit"] {
+  background-color: #0078d7;
+  color: #fff;
+  border: none;
+  padding: 12px 18px;
   margin-top: 10px;
-  font-style: italic;
-  color: #555;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+form button:hover,
+form input[type="submit"]:hover {
+  background-color: #005bb5;
 }
 
 /* ===== Footer ===== */
@@ -136,46 +144,29 @@ footer {
   background: #004080;
   color: #fff;
   text-align: center;
-  padding: 15px;
-  margin-top: 40px;
+  padding: 15px 10px;
+  margin-top: 20px;
+  font-size: 0.9rem;
 }
 
-/* ===== Mobile Menu ===== */
-.hamburger {
-  display: none;
-  background: #ffb000;
-  color: #1a1a1a;
-  border: none;
-  padding: 10px 14px;
-  border-radius: 6px;
-  font-weight: 700;
-  margin-left: 12px;
-}
-
+/* ===== Responsive ===== */
 @media (max-width: 820px) {
-  .hamburger { display: inline-block; }
-
-  #site-nav .menu {
-    display: none;
+  .menu {
     flex-direction: column;
-    align-items: stretch;
-    padding: 10px 12px 16px;
-    gap: 6px;
-  }
-
-  #site-nav.open .menu { display: flex; }
-
-  .menu a { padding: 12px 14px; }
-
-  .submenu {
-    position: static;
-    background: #003468;
-    border-radius: 6px;
-    padding: 6px 0;
-    margin-left: 10px;
     display: none;
   }
-
-  .menu li:focus-within .submenu,
-  .menu li:hover .submenu { display: block; }
+  .menu.active {
+    display: block;
+    text-align: center;
+  }
+  .menu-toggle {
+    display: block;
+    background: #003366;
+    color: #fff;
+    border: none;
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+  }
 }
