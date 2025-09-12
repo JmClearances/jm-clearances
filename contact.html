@@ -1,52 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Get in touch with JM Clearances for house, office, and bereavement clearances across Chester, Warrington, and Northwich. Contact us today for a free no-obligation quote.">
-    <title>Contact Us - JM Clearances</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - JM Clearances</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="main.js" defer></script>
 </head>
 <body>
-    <header>
-        <h1>JM Clearances</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="what-we-do.html">Services</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+  <!-- Header & Navigation -->
+  <header>
+    <nav>
+      <ul class="menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li>
+          <a href="services.html">What We Do</a>
+          <ul class="submenu">
+            <li><a href="#">House Clearances</a></li>
+            <li><a href="#">Office Clearances</a></li>
+            <li><a href="#">Bereavement Clearances</a></li>
+          </ul>
+        </li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <section class="container">
-        <h2>Contact Us</h2>
-        <p>Contact <strong>JM Clearances</strong> today for a free, no-obligation quote. Our friendly team is ready to assist you with your clearance needs.</p>
+  <!-- Main Contact Section -->
+  <main>
+    <section id="contact">
+      <h1>Contact Us</h1>
+      <p class="intro">We’d love to hear from you! Whether you want a quote, have questions, or need advice on clearance services, reach out to us and we’ll respond promptly.</p>
 
-        <div style="background: #f4faff; padding: 15px; border-radius: 6px; margin-bottom: 20px;">
-            <p><span style="font-size: 1.2em;">📍</span> <strong>Location:</strong> Chester & Surrounding Areas</p>
-            <p><span style="font-size: 1.2em;">📞</span> <strong>Phone:</strong> <a href="tel:07593135373">07593 135373</a></p>
-            <p><span style="font-size: 1.2em;">✉️</span> <strong>Email:</strong> <a href="mailto:contact@jmclearances.co.uk">contact@jmclearances.co.uk</a></p>
-        </div>
-
-        <h3>Send Us a Message</h3>
-        <form action="mailto:jmclearances@gmail.com" method="post" enctype="text/plain">
-            <label for="name">Name:</label><br>
-            <input type="text" id="name" name="name" required><br><br>
-
-            <label for="email">Email:</label><br>
-            <input type="email" id="email" name="email" required><br><br>
-
-            <label for="message">Message:</label><br>
-            <textarea id="message" name="message" rows="5" required></textarea><br><br>
-
-            <button type="submit">Send</button>
+      <div class="contact-container">
+        <!-- Contact Form -->
+        <form action="#" method="post">
+          <input type="text" name="name" placeholder="Your Name" required>
+          <input type="email" name="email" placeholder="Your Email" required>
+          <input type="tel" name="phone" placeholder="Your Phone Number" required>
+          <textarea name="message" placeholder="Your Message" required></textarea>
+          <button type="submit">Send Message</button>
         </form>
-    </section>
 
-    <footer>
-        <p>&copy; 2025 JM Clearances. All rights reserved.</p>
-    </footer>
+        <!-- Contact Info -->
+        <div class="contact-info">
+          <h2>Our Contact Details</h2>
+          <p><strong>Phone:</strong> 07593 135373</p>
+          <p><strong>Email:</strong> <a href="mailto:jmclearances@gmail.com">jmclearances@gmail.com</a></p>
+          <p><strong>Address:</strong> 123 Clearance Street, Townsville, UK</p>
+          <p><strong>Opening Hours:</strong> Mon-Fri: 9am - 6pm</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 JM Clearances
+  </footer>
 </body>
 </html>
