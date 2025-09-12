@@ -1,72 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>Contact Us - JM Clearances</title>
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <link rel="stylesheet" href="styles.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact JM Clearances</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="menu.js" defer></script>
 </head>
 <body>
-<header>
-  <nav>
-    <ul class="menu">
+  <header>
+    <button class="menu-toggle">☰ Menu</button>
+    <ul class="menu" role="menubar">
       <li><a href="index.html">Home</a></li>
       <li><a href="about.html">About Us</a></li>
-      <li>
-        <a href="services.html">What We Do</a>
-        <ul class="submenu">
-          <li><a href="services.html#house">House Clearances</a></li>
-          <li><a href="services.html#office">Office Clearances</a></li>
-          <li><a href="services.html#bereavement">Bereavement Clearances</a></li>
-        </ul>
-      </li>
-      <li><a href="contact.html">Contact Us</a></li>
+      <li><a href="services.html">What We Do</a></li>
+      <li><a href="contact.html" class="active">Contact Us</a></li>
     </ul>
-  </nav>
-</header>
+  </header>
 
-<section class="section">
-  <h2>Contact JM Clearances</h2>
-  <div class="contact-wrap">
+  <section>
+    <h2>Contact JM Clearances</h2>
 
-    <!-- General Contact Form -->
-    <form action="mailto:jmclearances@gmail.com" method="post" enctype="text/plain">
+    <div class="card">
       <h3>Send Us a Message</h3>
-      <input type="text" name="name" placeholder="Your Name" required>
-      <input type="email" name="email" placeholder="Your Email" required>
-      <textarea name="message" placeholder="Your Message" required></textarea>
-      <button type="submit">Send Message</button>
-    </form>
+      <form>
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea placeholder="Your Message" required></textarea>
+        <input type="submit" value="Send Message">
+      </form>
+    </div>
 
-    <!-- Quote Request Form -->
-    <form action="mailto:jmclearances@gmail.com" method="post" enctype="text/plain">
+    <div class="card">
       <h3>Request a Quote</h3>
-      <input type="text" name="name" placeholder="Your Name" required>
-      <input type="email" name="email" placeholder="Your Email" required>
-      <input type="tel" name="phone" placeholder="Phone Number (optional)">
-      <select name="service" required>
-        <option value="">Select a Service</option>
-        <option>House Clearance</option>
-        <option>Office Clearance</option>
-        <option>Bereavement Clearance</option>
-        <option>Other</option>
-      </select>
-      <textarea name="details" placeholder="Tell us about the clearance (e.g. property size, type of items)" required></textarea>
-      <button type="submit">Request Quote</button>
-    </form>
+      <form>
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <input type="tel" placeholder="Phone Number (optional)">
+        <select required>
+          <option value="">Select a Service</option>
+          <option>House Clearance</option>
+          <option>Office Clearance</option>
+          <option>Bereavement Clearance</option>
+        </select>
+        <textarea placeholder="Tell us about the clearance (e.g. size, location)" required></textarea>
+        <input type="submit" value="Request Quote">
+      </form>
+    </div>
 
-    <!-- Contact Info Panel -->
-    <div class="contact-panel">
+    <div class="card">
       <h3>Contact Details</h3>
-      <p><strong>Email:</strong> <a href="mailto:jmclearances@gmail.com">jmclearances@gmail.com</a></p>
-      <p><strong>Phone:</strong> <a href="tel:07593135373">07593 135373</a></p>
+      <p><strong>Email:</strong> jmclearances@gmail.com</p>
+      <p><strong>Phone:</strong> 07593 135373</p>
       <p>We cover Cheshire and surrounding areas and aim to reply promptly.</p>
     </div>
-  </div>
-</section>
+  </section>
 
-<footer>
-  © 2025 JM Clearances
-</footer>
+  <footer>
+    <p>© 2025 JM Clearances</p>
+  </footer>
 </body>
 </html>
