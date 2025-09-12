@@ -156,3 +156,37 @@ footer {
     margin-top: 40px;
     font-size: 0.9em;
 }
+/* --- Reviews Section Styling --- */
+#reviews {
+  padding: 40px 20px;
+  max-width: 800px;
+  margin: auto;
+}
+
+#reviews h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #003366;
+}
+
+.review {
+  margin: 20px 0;
+}
+
+.review p {
+  margin: 8px 0;
+  line-height: 1.6;
+}
+
+.reviewer {
+  text-align: center;
+  font-weight: bold;
+  color: #003366;
+  margin-top: 10px;
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 25px 0;
+}
