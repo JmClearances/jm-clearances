@@ -6,11 +6,15 @@
   font-family: Arial, sans-serif;
 }
 
-/* ===== Body ===== */
 body {
   line-height: 1.6;
   background-color: #f4f4f9;
   color: #333;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
 /* ===== Header & Navigation ===== */
@@ -23,110 +27,187 @@ header {
   display: flex;
   justify-content: center;
   list-style: none;
+  gap: 18px;
 }
 
 .menu li {
-  margin: 0 15px;
+  position: relative;
 }
 
 .menu a {
   color: #fff;
-  text-decoration: none;
-  font-weight: bold;
   padding: 8px 12px;
+  display: block;
+  border-radius: 4px;
+  font-weight: bold;
 }
 
-.menu a:hover {
-  background-color: #0066cc;
-  border-radius: 4px;
+.menu a:hover,
+.menu a.active {
+  background-color: #003366;
+}
+
+/* Submenu (dropdown) */
+.submenu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #004080;
+  list-style: none;
+  min-width: 200px;
+  border-radius: 6px;
+  overflow: hidden;
+  z-index: 1000;
+}
+
+.submenu a {
+  padding: 10px;
+  font-weight: normal;
+}
+
+.menu li:hover .submenu,
+.menu li:focus-within .submenu {
+  display: block;
 }
 
 /* ===== Hero Section ===== */
 .hero {
-  text-align: center;
-  padding: 60px 20px;
   background: linear-gradient(135deg, #004080, #0073e6);
   color: #fff;
+  text-align: center;
+  padding: 70px 20px;
 }
 
 .hero h1 {
-  font-size: 2.5rem;
-  margin-bottom: 15px;
+  font-size: 2.4rem;
+  margin-bottom: 12px;
 }
 
 .hero p {
-  font-size: 1.2rem;
-  margin-bottom: 25px;
+  font-size: 1.15rem;
+  max-width: 780px;
+  margin: 0 auto 18px;
 }
 
-.btn {
-  background-color: #ffcc00;
-  color: #000;
-  padding: 12px 24px;
-  text-decoration: none;
+.hero .button {
+  display: inline-block;
+  background: #ffb000;
+  color: #1a1a1a;
+  padding: 12px 20px;
   border-radius: 6px;
   font-weight: bold;
 }
 
-.btn:hover {
-  background-color: #e6b800;
+.hero .button:hover {
+  background: #e39e00;
 }
 
-/* ===== Section Styling ===== */
-section {
+/* ===== Sections ===== */
+.section {
   padding: 40px 20px;
-  max-width: 900px;
-  margin: auto;
+  max-width: 1100px;
+  margin: 0 auto;
 }
 
-h2 {
+.section h2 {
   text-align: center;
+  margin-bottom: 20px;
   color: #004080;
-  margin-bottom: 25px;
 }
 
-/* ===== Cards ===== */
+/* ===== Reviews ===== */
+.review-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.review {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.review .author {
+  margin-top: 10px;
+  font-style: italic;
+  color: #555;
+}
+
+/* ===== Cards (services/about) ===== */
 .card {
   background: #fff;
   padding: 20px;
   margin: 15px 0;
   border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* ===== Contact Form ===== */
+/* ===== Forms ===== */
 form {
-  display: grid;
-  gap: 15px;
   max-width: 600px;
-  margin: auto;
+  margin: 0 auto 30px;
+  text-align: center;
 }
 
-input, textarea, select {
-  padding: 10px;
+form input,
+form textarea,
+form select {
+  width: 100%;
+  padding: 10px 12px;
+  margin: 8px 0;
   border: 1px solid #ccc;
-  border-radius: 5px;
+  border-radius: 6px;
+  font-size: 1rem;
+  background: #fff;
 }
 
-button {
-  background-color: #004080;
+form textarea {
+  min-height: 110px;
+  resize: vertical;
+}
+
+form button,
+form input[type="submit"] {
+  background-color: #0078d7;
   color: #fff;
   border: none;
-  padding: 12px;
+  padding: 12px 18px;
   border-radius: 6px;
+  font-weight: 600;
   cursor: pointer;
-  font-weight: bold;
+  transition: background 0.2s;
 }
 
-button:hover {
-  background-color: #0066cc;
+form button:hover,
+form input[type="submit"]:hover {
+  background-color: #005bb5;
 }
 
 /* ===== Footer ===== */
 footer {
-  text-align: center;
-  background-color: #004080;
+  background: #004080;
   color: #fff;
-  padding: 15px 0;
-  margin-top: 30px;
+  text-align: center;
+  padding: 15px;
+  margin-top: 40px;
+  font-size: 0.95rem;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 480px) {
+  .menu {
+    gap: 10px;
+  }
+  .menu a {
+    padding: 8px 10px;
+  }
+  .hero h1 {
+    font-size: 2rem;
+  }
+  .hero p {
+    font-size: 1rem;
+  }
 }
