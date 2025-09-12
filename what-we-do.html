@@ -3,110 +3,156 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>What We Do - JM Clearances</title>
-  <link rel="stylesheet" href="style.css"> <!-- Uses your existing CSS -->
+  <title>What We Do | JM Clearances</title>
   <style>
     body {
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
-      line-height: 1.6;
+      background: #f5f5f5;
+      color: #333;
     }
+
     header {
       background: #333;
-      color: #fff;
-      padding: 15px 20px;
+      color: white;
+      padding: 15px;
       text-align: center;
     }
-    header nav a {
-      color: #fff;
+
+    header h1 {
+      margin: 0;
+    }
+
+    nav {
+      margin-top: 10px;
+    }
+
+    nav a {
+      color: white;
       margin: 0 10px;
       text-decoration: none;
       font-weight: bold;
     }
-    header nav a:hover {
-      text-decoration: underline;
+
+    section {
+      padding: 50px 20px;
+      text-align: center;
     }
-    main {
-      padding: 20px;
-      max-width: 1000px;
-      margin: auto;
-    }
+
     h2 {
-      color: #333;
-      border-bottom: 2px solid #4CAF50;
+      font-size: 28px;
+      margin-bottom: 10px;
+      border-bottom: 3px solid #28a745;
+      display: inline-block;
       padding-bottom: 5px;
     }
+
+    p.intro {
+      max-width: 700px;
+      margin: 15px auto 40px;
+      font-size: 18px;
+      line-height: 1.6;
+    }
+
     .services {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
       gap: 20px;
-      margin: 20px 0;
     }
-    .service {
-      background: #f9f9f9;
-      padding: 15px;
-      text-align: center;
-      border-radius: 8px;
-      border: 1px solid #ddd;
-      transition: 0.3s;
+
+    .service-card {
+      background: white;
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      width: 280px;
+      transition: transform 0.3s ease;
     }
-    .service:hover {
+
+    .service-card:hover {
       transform: translateY(-5px);
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     }
-    .service img {
+
+    .service-card img {
       width: 60px;
-      height: 60px;
+      margin-bottom: 15px;
+    }
+
+    .service-card h3 {
       margin-bottom: 10px;
+      color: #28a745;
     }
-    ul {
-      list-style: none;
-      padding: 0;
+
+    .cta {
+      margin-top: 40px;
     }
-    ul li {
-      margin: 10px 0;
-    }
-    .gallery {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 15px;
-      margin-top: 30px;
-    }
-    .gallery img {
-      width: 100%;
-      height: 180px;
-      object-fit: cover;
-      border-radius: 8px;
-    }
-    footer {
-      background: #333;
-      color: #fff;
-      text-align: center;
-      padding: 15px;
-      margin-top: 30px;
-    }
-    footer a {
-      color: #4CAF50;
+
+    .cta a {
+      background: #28a745;
+      color: white;
+      padding: 15px 30px;
       text-decoration: none;
+      border-radius: 5px;
+      font-size: 18px;
+      transition: background 0.3s ease;
+    }
+
+    .cta a:hover {
+      background: #218838;
     }
   </style>
 </head>
 <body>
+
   <header>
     <h1>JM Clearances</h1>
     <nav>
       <a href="index.html">Home</a>
       <a href="what-we-do.html">What We Do</a>
-      <a href="index_with_contact.html">Contact</a>
+      <a href="contact.html">Contact</a>
     </nav>
   </header>
 
-  <main>
+  <section>
     <h2>What We Do</h2>
-    <p>At <strong>JM Clearances</strong>, we provide reliable, friendly and affordable property clearance services throughout Cheshire and surrounding areas.</p>
+    <p class="intro">
+      At <strong>JM Clearances</strong>, we provide reliable, friendly and affordable property clearance 
+      services throughout Cheshire and the surrounding areas. From house clearances to office moves, 
+      we make the process simple and stress-free.
+    </p>
 
     <div class="services">
-      <div class="service">
-        <img src="https://cdn-icons-png.flaticon.com/512/679/679720.png" alt="House Clearance">
-        <h3>
+      <div class="service-card">
+        <img src="https://img.icons8.com/ios-filled/100/28a745/home.png" alt="House Clearances">
+        <h3>House Clearances</h3>
+        <p>Full or partial house clearances, handled with care and professionalism.</p>
+      </div>
+
+      <div class="service-card">
+        <img src="https://img.icons8.com/ios-filled/100/28a745/box.png" alt="Garage & Loft Clearances">
+        <h3>Garage & Loft</h3>
+        <p>We help clear garages, lofts, and storage spaces quickly and efficiently.</p>
+      </div>
+
+      <div class="service-card">
+        <img src="https://img.icons8.com/ios-filled/100/28a745/office.png" alt="Office Clearances">
+        <h3>Office Clearances</h3>
+        <p>Stress-free business and office clearances, tailored to your needs.</p>
+      </div>
+
+      <div class="service-card">
+        <img src="https://img.icons8.com/ios-filled/100/28a745/recycle.png" alt="Waste Disposal">
+        <h3>Waste Disposal</h3>
+        <p>Eco-friendly disposal of unwanted items, recycling wherever possible.</p>
+      </div>
+    </div>
+
+    <div class="cta">
+      <a href="contact.html">Get a Free Quote</a>
+    </div>
+  </section>
+
+</body>
+</html>
