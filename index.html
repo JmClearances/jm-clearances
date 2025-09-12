@@ -3,49 +3,35 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>JM Clearances - Home</title>
+  <title>JM Clearances</title>
   <link rel="stylesheet" href="style.css">
+  <script>
+    function toggleMenu() {
+      document.querySelector("nav ul").classList.toggle("showing");
+    }
+  </script>
 </head>
 <body>
-  <!-- Navigation -->
-  <nav class="navbar">
-    <div class="logo">JM Clearances</div>
-    <span class="menu-toggle">☰</span>
-    <ul class="nav-links">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About Us</a></li>
-      <li><a href="what-we-do.html">What We Do</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </nav>
-
-  <!-- Hero Section -->
-  <header class="hero">
-    <h1>Welcome to JM Clearances</h1>
-    <p>Your reliable partner for all clearance services.</p>
+  <header>
+    <nav>
+      <div class="logo">JM Clearances</div>
+      <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="what-we-do.html">What We Do</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <!-- Content -->
-  <main>
-    <section>
-      <h2>Why Choose Us?</h2>
-      <p>
-        At JM Clearances, we pride ourselves on delivering a professional,
-        friendly and affordable service. No job is too big or small — we are
-        here to help you with your clearance needs.
-      </p>
-    </section>
-  </main>
+  <div class="container">
+    <h1>Welcome to JM Clearances</h1>
+    <p>Your trusted partner for property clearances, rubbish removal, and more.</p>
+  </div>
 
-  <!-- Footer -->
   <footer>
-    <p>&copy; 2025 JM Clearances | All Rights Reserved</p>
+    <p>&copy; 2025 JM Clearances. All rights reserved.</p>
   </footer>
-
-  <script>
-    document.querySelector(".menu-toggle").addEventListener("click", () => {
-      document.querySelector(".nav-links").classList.toggle("active");
-    });
-  </script>
 </body>
 </html>
