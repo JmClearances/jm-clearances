@@ -3,35 +3,44 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact Us - JM Clearances</title>
+  <title>JM Clearances | Contact</title>
   <link rel="stylesheet" href="style.css">
-  <script src="menu.js" defer></script>
 </head>
 <body>
   <header>
-    <div class="logo">JM Clearances</div>
-    <button class="menu-toggle">☰</button>
-    <nav class="nav-links">
-      <a href="index.html">Home</a>
-      <a href="about.html">About Us</a>
-      <a href="what-we-do.html">What We Do</a>
-      <a href="contact.html">Contact</a>
+    <h1>JM Clearances</h1>
+    <nav>
+      <ul class="menu">
+        <li><a href="index.html">Home</a></li>
+        <li class="dropdown">
+          <a href="#">Menu ▾</a>
+          <ul class="dropdown-content">
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="what-we-do.html">What We Do</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </li>
+      </ul>
     </nav>
   </header>
 
+  <section class="hero" style="background-image:url('https://source.unsplash.com/1600x600/?phone,contact');">
+    <div class="hero-text">
+      <h2>Contact Us</h2>
+    </div>
+  </section>
+
   <main>
-    <section class="contact">
-      <h1>Contact Us</h1>
-      <p>We’d love to hear from you! Get in touch today for a free, no-obligation quote.</p>
-      <ul>
-        <li>📞 <strong>Phone:</strong> 07523 135373</li>
-        <li>📧 <strong>Email:</strong> jmclearances@gmail.com</li>
-      </ul>
+    <section>
+      <h2>Get In Touch</h2>
+      <p><strong>Phone:</strong> <a href="tel:07523135373">07523135373</a></p>
+      <p><strong>Email:</strong> <a href="mailto:jmclearances@gmail.com">jmclearances@gmail.com</a></p>
+      <p>We cover Cheshire and surrounding areas. Call or email us today for a free quote!</p>
     </section>
   </main>
 
   <footer>
-    <p>© 2025 JM Clearances. All rights reserved.</p>
+    <p>&copy; 2025 JM Clearances | jmclearances.co.uk</p>
   </footer>
 </body>
 </html>
