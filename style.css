@@ -1,40 +1,109 @@
-/* Hero banner */
+/* General Reset */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background: #f9f9f9;
+  color: #333;
+}
+
+/* Header / Hero */
 .hero {
-  background: url('https://picsum.photos/1600/500?random=1') no-repeat center center/cover;
+  background: #444 url('https://picsum.photos/1200/400?grayscale') no-repeat center/cover;
   color: white;
-  height: 400px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   text-align: center;
-  padding: 20px;
+  padding: 100px 20px;
 }
 
-.hero-content {
-  background: rgba(0, 0, 0, 0.5);
-  padding: 20px 30px;
-  border-radius: 8px;
-}
-
-.hero h2 {
-  font-size: 2.5em;
-  margin-bottom: 15px;
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
 }
 
 .hero p {
-  font-size: 1.2em;
-  margin-bottom: 20px;
+  font-size: 1.2rem;
 }
 
-.btn {
-  background: #ffcc00;
-  color: #004080;
+/* Navigation Bar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #222;
   padding: 10px 20px;
-  border-radius: 5px;
-  text-decoration: none;
-  font-weight: bold;
 }
 
-.btn:hover {
-  background: #e6b800;
+.navbar .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+  color: #ffcc00;
+}
+
+/* Mobile Menu */
+.menu-toggle {
+  display: none;
+  font-size: 1.8rem;
+  color: #fff;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background: #222;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    padding: 15px;
+    border-radius: 5px;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .nav-links li {
+    margin: 10px 0;
+  }
+}
+
+/* Main Content */
+main {
+  padding: 20px;
+  max-width: 900px;
+  margin: auto;
+  background: white;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 15px;
+  background: #222;
+  color: white;
+  margin-top: 30px;
 }
