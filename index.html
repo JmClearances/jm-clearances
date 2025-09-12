@@ -3,56 +3,111 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>JM Clearances | House & Property Clearance Cheshire</title>
+  <title>JM Clearances</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    /* Navbar styling */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #333;
+      padding: 10px 20px;
+    }
+    .navbar .logo {
+      color: #fff;
+      font-size: 20px;
+      font-weight: bold;
+    }
+    .navbar .nav-links {
+      list-style: none;
+      display: flex;
+      margin: 0;
+      padding: 0;
+    }
+    .navbar .nav-links li {
+      margin: 0 15px;
+    }
+    .navbar .nav-links a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 16px;
+    }
+    .navbar .nav-links a:hover {
+      text-decoration: underline;
+    }
+    .navbar .menu-toggle {
+      display: none;
+      font-size: 24px;
+      color: #fff;
+      cursor: pointer;
+    }
+    @media (max-width: 768px) {
+      .navbar .nav-links {
+        display: none;
+        flex-direction: column;
+        background: #444;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        padding: 10px;
+        border-radius: 5px;
+      }
+      .navbar .nav-links li {
+        margin: 10px 0;
+      }
+      .navbar .menu-toggle {
+        display: block;
+      }
+      .navbar .nav-links.active {
+        display: flex;
+      }
+    }
+  </style>
 </head>
 <body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="logo">JM Clearances</div>
+    <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="what-we-do.html">What We Do</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
 
-  <!-- Header -->
+  <!-- Hero Section -->
   <header>
-    <h1>JM Clearances</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About Us</a>
-      <a href="services.html">Services</a>
-      <a href="contact.html">Contact</a>
-    </nav>
+    <h1>Welcome to JM Clearances</h1>
+    <p>Your trusted clearance and waste removal experts</p>
   </header>
-
-  <!-- Hero Banner -->
-  <section class="hero">
-    <div class="hero-content">
-      <h2>Your Trusted Clearance Service</h2>
-      <p>Fast, professional, and eco-friendly house clearances across Cheshire and surrounding areas.</p>
-      <a href="contact.html" class="btn">Get a Free Quote</a>
-    </div>
-  </section>
 
   <!-- Main Content -->
   <main>
-    <h2>Welcome to JM Clearances</h2>
-    <p>
-      At <strong>JM Clearances</strong>, we make house and property clearance simple. 
-      Whether you need a single item removed or a full house clearance, our professional team is here to help. 
-      We pride ourselves on being reliable, respectful, and eco-friendly.
-    </p>
+    <section>
+      <h2>Our Services</h2>
+      <p>We provide professional clearance services, including house, garden, office, and rubbish removal.</p>
+      <a href="what-we-do.html">Learn more about what we do</a>
+    </section>
 
-    <h2>Why Choose Us?</h2>
-    <ul>
-      <li>✅ Full or partial house clearances</li>
-      <li>✅ Garage, loft, and shed clearances</li>
-      <li>✅ Sensitive bereavement clearances handled with care</li>
-      <li>✅ Licensed & insured waste carrier</li>
-      <li>✅ Recycling and donations to local charities where possible</li>
-      <li>✅ Same-day or short-notice clearances available</li>
-    </ul>
+    <section>
+      <h2>Why Choose Us?</h2>
+      <p>Fast, reliable, and affordable clearance services tailored to your needs. Fully insured and licensed waste carriers.</p>
+    </section>
   </main>
 
   <!-- Footer -->
   <footer>
-    <p>📞 07523135373 | 📧 jmclearances@gmail.com</p>
-    <p>&copy; 2025 JM Clearances. All Rights Reserved.</p>
+    <p>&copy; 2024 JM Clearances. All rights reserved.</p>
   </footer>
 
+  <!-- Script for mobile menu -->
+  <script>
+    document.getElementById("menu-toggle").addEventListener("click", function() {
+      document.getElementById("nav-links").classList.toggle("active");
+    });
+  </script>
 </body>
 </html>
