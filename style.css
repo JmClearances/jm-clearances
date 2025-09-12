@@ -1,173 +1,266 @@
-/* ===== Global Styles ===== */
+/* ===================== Reset & Base Styles ===================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color: #f9f9f9;
-    color: #333;
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #333;
 }
 
-.container {
-    width: 90%;
-    max-width: 1200px;
-    margin: auto;
-    padding: 20px;
+h1, h2, h3 {
+  color: #1a1a1a;
 }
 
-/* ===== Header & Navigation ===== */
+/* ===================== Header & Navigation ===================== */
 header {
-    background: #0056b3;
-    color: white;
-    padding: 15px 0;
-    text-align: center;
+  background-color: #333;
+  color: #fff;
+  padding: 15px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
-header h1 {
-    margin: 0;
-    font-size: 2.5em;
+header nav {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
-nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 10px 0 0;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+.menu {
+  list-style: none;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
 }
 
-nav ul li {
-    margin: 5px 15px;
+.menu li {
+  position: relative;
 }
 
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s ease;
+.menu a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 15px;
+  display: block;
+  transition: background 0.3s ease;
 }
 
-nav ul li a:hover {
-    color: #ffcc00;
+.menu a:hover {
+  background-color: #555;
+  border-radius: 5px;
 }
 
-/* ===== Hero Section ===== */
-.hero {
-    background: linear-gradient(to right, #007bff, #0056b3);
-    color: white;
-    text-align: center;
-    padding: 80px 20px;
+/* Dropdown Menu */
+.submenu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #444;
+  list-style: none;
+  min-width: 180px;
+  border-radius: 5px;
+  overflow: hidden;
+  z-index: 1000;
 }
 
-.hero h2 {
-    font-size: 2.5em;
-    margin-bottom: 15px;
+.submenu li a {
+  padding: 10px 15px;
+  color: #fff;
 }
 
-.hero p {
-    font-size: 1.2em;
-    margin-bottom: 25px;
+.menu li:hover .submenu {
+  display: block;
 }
 
-.btn {
-    display: inline-block;
-    padding: 12px 25px;
-    background: #ffcc00;
-    color: #333;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 5px;
-    transition: background 0.3s ease;
-}
-
-.btn:hover {
-    background: #e6b800;
-}
-
-/* ===== Section Styles ===== */
+/* ===================== Main Sections ===================== */
 section {
-    padding: 50px 20px;
-    text-align: center;
+  max-width: 1200px;
+  margin: 50px auto;
+  padding: 30px 20px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
 }
 
-section h2 {
-    margin-bottom: 20px;
-    color: #0056b3;
+section h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  text-align: center;
 }
 
-/* ===== Services ===== */
-.services-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-    text-align: left;
+section p {
+  font-size: 1.1rem;
+  color: #555;
+  line-height: 1.7;
+  max-width: 900px;
+  margin: 0 auto 20px auto;
+  text-align: center;
 }
 
-.services-list div {
-    background: white;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    padding: 20px;
-    width: 300px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+/* ===================== Services Section ===================== */
+.service-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+  margin-top: 40px;
 }
 
-/* ===== Testimonials ===== */
-.testimonials {
-    background: #e9f2ff;
-    padding: 50px 20px;
+.service-card {
+  background: #fff;
+  flex: 1 1 30%;
+  padding: 25px 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.testimonial {
-    background: white;
-    padding: 20px;
-    margin: 15px auto;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    max-width: 600px;
+.service-card h2 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
 }
 
-/* ===== Contact Form ===== */
-form {
-    max-width: 600px;
-    margin: auto;
-    text-align: left;
+/* Colored top borders for services */
+.service-card.house {
+  border-top: 5px solid #4CAF50; /* Green */
 }
 
-form label {
-    display: block;
-    margin: 10px 0 5px;
-    font-weight: bold;
+.service-card.office {
+  border-top: 5px solid #2196F3; /* Blue */
 }
 
-form input, form textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
+.service-card.bereavement {
+  border-top: 5px solid #FF9800; /* Orange */
+}
+
+.service-card p {
+  color: #555;
+  line-height: 1.6;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+/* ===================== Reviews Section ===================== */
+#reviews {
+  background: #f0f4f8;
+  padding: 50px 20px;
+  border-radius: 12px;
+}
+
+.review-card {
+  background: #fff;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-left: 5px solid #2196F3;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+.review-card p {
+  font-style: italic;
+  color: #555;
+}
+
+.review-card span {
+  display: block;
+  font-weight: bold;
+  margin-top: 10px;
+  color: #333;
+}
+
+/* ===================== Contact Form ===================== */
+form input, form textarea, form button {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+form textarea {
+  resize: vertical;
+  min-height: 120px;
 }
 
 form button {
-    background: #0056b3;
-    color: white;
-    border: none;
-    padding: 12px 25px;
-    cursor: pointer;
-    border-radius: 5px;
-    font-size: 1em;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease;
 }
 
 form button:hover {
-    background: #003f80;
+  background-color: #555;
 }
 
-/* ===== Footer ===== */
+/* ===================== Footer ===================== */
 footer {
-    background: #333;
-    color: white;
-    text-align: center;
-    padding: 15px 0;
-    margin-top: 30px;
+  text-align: center;
+  padding: 25px;
+  background-color: #333;
+  color: #fff;
+  margin-top: 50px;
+  border-radius: 12px 12px 0 0;
+}
+
+/* ===================== Buttons ===================== */
+.button {
+  display: inline-block;
+  background-color: #2196F3;
+  color: #fff;
+  padding: 12px 25px;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.button:hover {
+  background-color: #0b7dda;
+}
+
+/* ===================== Responsive Design ===================== */
+@media (max-width: 992px) {
+  .service-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .service-card {
+    width: 80%;
+  }
+
+  .menu {
+    flex-direction: column;
+  }
+
+  .submenu {
+    position: relative;
+  }
+}
+
+@media (max-width: 768px) {
+  section h1 {
+    font-size: 2rem;
+  }
+
+  section p {
+    font-size: 1rem;
+  }
+
+  .button {
+    padding: 10px 20px;
+  }
 }
