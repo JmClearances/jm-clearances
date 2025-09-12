@@ -3,48 +3,37 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact | JM Clearances</title>
+  <title>Contact - JM Clearances</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- Header -->
-  <header>
-    <h1>JM Clearances</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About Us</a>
-      <a href="services.html">Services</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-  </header>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="logo">JM Clearances</div>
+    <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="what-we-do.html">What We Do</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
 
-  <!-- Hero -->
-  <section class="hero">
-    <div class="hero-content">
-      <h2>Contact Us</h2>
-      <p>Get in touch today for a free, no-obligation quote.</p>
-    </div>
+  <section class="content">
+    <h1>Contact Us</h1>
+    <p>We’d love to hear from you! Whether you have a question about our services, need a quote, or want to book a clearance, feel free to get in touch.</p>
+    <ul>
+      <li><strong>Phone:</strong> 01234 567 890</li>
+      <li><strong>Email:</strong> info@jmclearances.co.uk</li>
+      <li><strong>Address:</strong> 123 High Street, Your Town, UK</li>
+    </ul>
   </section>
 
-  <!-- Main Content -->
-  <main>
-    <h2>We’d love to hear from you</h2>
-    <p>Please use the details below to reach us directly:</p>
-
-    <ul>
-      <li>📞 <strong>Phone:</strong> 07523135373</li>
-      <li>📧 <strong>Email:</strong> jmclearances@gmail.com</li>
-    </ul>
-
-    <p>We aim to respond quickly, and same-day clearances are available upon request.</p>
-  </main>
-
-  <!-- Footer -->
-  <footer>
-    <p>📞 07523135373 | 📧 jmclearances@gmail.com</p>
-    <p>&copy; 2025 JM Clearances. All Rights Reserved.</p>
-  </footer>
-
+  <script>
+    document.getElementById("menu-toggle").addEventListener("click", function() {
+      document.getElementById("nav-links").classList.toggle("active");
+    });
+  </script>
 </body>
 </html>
