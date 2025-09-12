@@ -3,51 +3,54 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact JM Clearances</title>
+  <title>Contact Us - JM Clearances</title>
   <link rel="stylesheet" href="styles.css">
-  <script src="menu.js" defer></script>
 </head>
 <body>
   <header>
-    <button class="menu-toggle">☰ Menu</button>
-    <ul class="menu" role="menubar">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About Us</a></li>
-      <li><a href="services.html">What We Do</a></li>
-      <li><a href="contact.html" class="active">Contact Us</a></li>
-    </ul>
+    <nav aria-label="Primary">
+      <ul class="menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li>
+          <a href="services.html">What We Do</a>
+          <ul class="submenu">
+            <li><a href="services.html#house">House Clearances</a></li>
+            <li><a href="services.html#office">Office Clearances</a></li>
+            <li><a href="services.html#bereavement">Bereavement Clearances</a></li>
+          </ul>
+        </li>
+        <li><a href="contact.html" class="active">Contact Us</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <section>
+  <section class="section">
     <h2>Contact JM Clearances</h2>
-
     <div class="card">
-      <h3>Send Us a Message</h3>
       <form>
-        <input type="text" placeholder="Your Name" required>
-        <input type="email" placeholder="Your Email" required>
-        <textarea placeholder="Your Message" required></textarea>
-        <input type="submit" value="Send Message">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
       </form>
     </div>
-
     <div class="card">
       <h3>Request a Quote</h3>
       <form>
-        <input type="text" placeholder="Your Name" required>
-        <input type="email" placeholder="Your Email" required>
-        <input type="tel" placeholder="Phone Number (optional)">
-        <select required>
+        <input type="text" name="qname" placeholder="Your Name" required>
+        <input type="email" name="qemail" placeholder="Your Email" required>
+        <input type="tel" name="qphone" placeholder="Phone (optional)">
+        <select name="service" required>
           <option value="">Select a Service</option>
           <option>House Clearance</option>
           <option>Office Clearance</option>
           <option>Bereavement Clearance</option>
         </select>
-        <textarea placeholder="Tell us about the clearance (e.g. size, location)" required></textarea>
-        <input type="submit" value="Request Quote">
+        <textarea name="qdetails" placeholder="Details of the clearance (e.g. size, location)" required></textarea>
+        <button type="submit">Request Quote</button>
       </form>
     </div>
-
     <div class="card">
       <h3>Contact Details</h3>
       <p><strong>Email:</strong> jmclearances@gmail.com</p>
