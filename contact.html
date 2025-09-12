@@ -5,35 +5,43 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact - JM Clearances</title>
   <link rel="stylesheet" href="style.css">
-  <script>
-    function toggleMenu() {
-      document.querySelector("nav ul").classList.toggle("showing");
-    }
-  </script>
+  <script defer src="menu.js"></script>
 </head>
 <body>
+  <!-- Header -->
   <header>
+    <div class="logo">JM Clearances</div>
     <nav>
-      <div class="logo">JM Clearances</div>
-      <div class="menu-toggle" onclick="toggleMenu()">☰</div>
-      <ul>
+      <button class="menu-toggle">☰</button>
+      <ul class="menu">
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About Us</a></li>
         <li><a href="what-we-do.html">What We Do</a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
       </ul>
     </nav>
   </header>
 
-  <div class="container">
-    <h1>Contact Us</h1>
-    <p>Phone: 01234 567890</p>
-    <p>Email: info@jmclearances.co.uk</p>
-    <p>We’ll be happy to help with any clearance needs you may have.</p>
-  </div>
+  <!-- Contact Section -->
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Contact Us</h1>
+      <p>Get in touch today for a free, no-obligation quote.</p>
+    </div>
+  </section>
 
+  <section class="content contact">
+    <h2>We’d love to hear from you</h2>
+    <p>Please use the details below to reach us directly:</p>
+    <ul>
+      <li><strong>📞 Phone:</strong> 07523135373</li>
+      <li><strong>📧 Email:</strong> jmclearances@gmail.com</li>
+    </ul>
+  </section>
+
+  <!-- Footer -->
   <footer>
-    <p>&copy; 2025 JM Clearances. All rights reserved.</p>
+    <p>© 2025 JM Clearances. All rights reserved.</p>
   </footer>
 </body>
 </html>
