@@ -3,74 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>JM Clearances</title>
+  <title>JM Clearances - Home</title>
   <link rel="stylesheet" href="style.css">
-  <style>
-    /* Navbar styling */
-    .navbar {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      background: #333;
-      padding: 10px 20px;
-    }
-    .navbar .logo {
-      color: #fff;
-      font-size: 20px;
-      font-weight: bold;
-    }
-    .navbar .nav-links {
-      list-style: none;
-      display: flex;
-      margin: 0;
-      padding: 0;
-    }
-    .navbar .nav-links li {
-      margin: 0 15px;
-    }
-    .navbar .nav-links a {
-      color: #fff;
-      text-decoration: none;
-      font-size: 16px;
-    }
-    .navbar .nav-links a:hover {
-      text-decoration: underline;
-    }
-    .navbar .menu-toggle {
-      display: none;
-      font-size: 24px;
-      color: #fff;
-      cursor: pointer;
-    }
-    @media (max-width: 768px) {
-      .navbar .nav-links {
-        display: none;
-        flex-direction: column;
-        background: #444;
-        position: absolute;
-        top: 60px;
-        right: 20px;
-        padding: 10px;
-        border-radius: 5px;
-      }
-      .navbar .nav-links li {
-        margin: 10px 0;
-      }
-      .navbar .menu-toggle {
-        display: block;
-      }
-      .navbar .nav-links.active {
-        display: flex;
-      }
-    }
-  </style>
 </head>
 <body>
   <!-- Navigation -->
   <nav class="navbar">
     <div class="logo">JM Clearances</div>
-    <div class="menu-toggle" id="menu-toggle">&#9776;</div>
-    <ul class="nav-links" id="nav-links">
+    <span class="menu-toggle">☰</span>
+    <ul class="nav-links">
       <li><a href="index.html">Home</a></li>
       <li><a href="about.html">About Us</a></li>
       <li><a href="what-we-do.html">What We Do</a></li>
@@ -79,34 +20,31 @@
   </nav>
 
   <!-- Hero Section -->
-  <header>
+  <header class="hero">
     <h1>Welcome to JM Clearances</h1>
-    <p>Your trusted clearance and waste removal experts</p>
+    <p>Your reliable partner for all clearance services.</p>
   </header>
 
-  <!-- Main Content -->
+  <!-- Content -->
   <main>
     <section>
-      <h2>Our Services</h2>
-      <p>We provide professional clearance services, including house, garden, office, and rubbish removal.</p>
-      <a href="what-we-do.html">Learn more about what we do</a>
-    </section>
-
-    <section>
       <h2>Why Choose Us?</h2>
-      <p>Fast, reliable, and affordable clearance services tailored to your needs. Fully insured and licensed waste carriers.</p>
+      <p>
+        At JM Clearances, we pride ourselves on delivering a professional,
+        friendly and affordable service. No job is too big or small — we are
+        here to help you with your clearance needs.
+      </p>
     </section>
   </main>
 
   <!-- Footer -->
   <footer>
-    <p>&copy; 2024 JM Clearances. All rights reserved.</p>
+    <p>&copy; 2025 JM Clearances | All Rights Reserved</p>
   </footer>
 
-  <!-- Script for mobile menu -->
   <script>
-    document.getElementById("menu-toggle").addEventListener("click", function() {
-      document.getElementById("nav-links").classList.toggle("active");
+    document.querySelector(".menu-toggle").addEventListener("click", () => {
+      document.querySelector(".nav-links").classList.toggle("active");
     });
   </script>
 </body>
