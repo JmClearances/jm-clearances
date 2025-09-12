@@ -4,68 +4,53 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>JM Clearances</title>
-  <style>
-    body { font-family: Arial, sans-serif; margin: 0; padding: 0; line-height: 1.6; }
-    header { background: #333; color: #fff; padding: 1rem; text-align: center; }
-    nav ul { list-style: none; padding: 0; }
-    nav ul li { display: inline; margin: 0 10px; }
-    nav ul li a { color: #fff; text-decoration: none; }
-    section { padding: 2rem; }
-    footer { background: #333; color: #fff; text-align: center; padding: 1rem; margin-top: 2rem; }
-    form { max-width: 500px; margin: auto; }
-    form input, form textarea { width: 100%; padding: 10px; margin: 5px 0; }
-    form button { background: #333; color: #fff; border: none; padding: 10px; cursor: pointer; }
-  </style>
+  <title>Contact Us - JM Clearances</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <header>
+    <nav>
+      <h1>JM Clearances</h1>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="what-we-do.html">What We Do</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-<header>
-  <h1>JM Clearances</h1>
-  <p>House and Property Clearance Services in Cheshire & Surrounding Areas</p>
-  <nav>
-    <ul>
-      <li><a href="#services">Services</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
-</header>
+  <main class="container">
+    <section class="intro">
+      <h2>Contact Us</h2>
+      <p>We’d love to hear from you! Whether you need a full clearance or just a single room, our team is here to help.</p>
+    </section>
 
-<section id="services">
-  <h2>Our Services</h2>
-  <p>We provide professional and reliable clearance services, including:</p>
-  <ul>
-    <li>Full house clearances</li>
-    <li>Garage, loft, and shed clearances</li>
-    <li>Office and commercial clearances</li>
-    <li>Single item removal</li>
-  </ul>
-</section>
+    <section class="contact-info">
+      <div class="contact-card">
+        <h3>📞 Call Us</h3>
+        <p><a href="tel:07523135373">07523 135373</a></p>
+      </div>
 
-<section id="contact">
-  <h2>Contact Us</h2>
-  <p>Get in touch with us today for a free quote!</p>
-  <form action="https://formspree.io/f/your-form-id" method="POST">
-    <label for="name">Name:</label>
-    <input type="text" name="name" required>
-    
-    <label for="email">Email:</label>
-    <input type="email" name="_replyto" required>
-    
-    <label for="phone">Phone:</label>
-    <input type="text" name="phone">
-    
-    <label for="message">Message:</label>
-    <textarea name="message" rows="5" required></textarea>
-    
-    <button type="submit">Send Message</button>
-  </form>
-  <p>You can also call us at: <strong>07523 135373</strong> or email <strong>jmclearances@gmail.com</strong></p>
-</section>
+      <div class="contact-card">
+        <h3>📧 Email Us</h3>
+        <p><a href="mailto:info@jmclearances.co.uk">info@jmclearances.co.uk</a></p>
+      </div>
 
-<footer>
-  <p>&copy; 2025 JM Clearances. All rights reserved.</p>
-</footer>
+      <div class="contact-card">
+        <h3>📍 Areas We Cover</h3>
+        <p>Cheshire and surrounding areas</p>
+      </div>
+    </section>
 
+    <section class="cta">
+      <h2>Get Your Free Quote Today</h2>
+      <a href="tel:07523135373" class="btn">Call Now</a>
+      <a href="mailto:info@jmclearances.co.uk" class="btn secondary">Send an Email</a>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 JM Clearances. All rights reserved.</p>
+  </footer>
 </body>
 </html>
