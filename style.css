@@ -1,111 +1,79 @@
-/* General */
-body {
+/* General reset */
+* {
   margin: 0;
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
-  background: #f9f9f9;
-  color: #222;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-h1, h2 {
-  color: #2c3e50;
+/* Body styling */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+  color: #333;
 }
 
 /* Header */
 header {
-  background: #2c3e50;
+  background: #222;
   color: #fff;
-  padding: 1rem;
+  padding: 15px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
 header h1 {
-  margin: 0;
+  font-size: 1.5rem;
 }
 
-nav ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+/* Navigation */
+nav {
   display: flex;
+  gap: 20px;
 }
 
-nav ul li {
-  margin-left: 20px;
-  position: relative;
-}
-
-nav ul li a {
-  color: white;
+nav a {
+  color: #fff;
   text-decoration: none;
-  padding: 8px 12px;
+  font-weight: bold;
 }
 
-nav ul li a:hover {
-  background: #1abc9c;
-  border-radius: 4px;
+nav a:hover {
+  text-decoration: underline;
 }
 
-/* Dropdown */
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background: #34495e;
-  min-width: 160px;
-  z-index: 1;
-  top: 35px;
-  left: 0;
-}
-
-.dropdown-content li {
-  display: block;
-}
-
-.dropdown-content li a {
-  display: block;
-  padding: 10px;
-}
-
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
-/* Hero */
+/* Hero section */
 .hero {
-  height: 400px;
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.hero-text {
-  background: rgba(0,0,0,0.6);
-  color: white;
-  padding: 20px;
-  border-radius: 8px;
+  background: url("hero.jpg") no-repeat center center/cover;
+  color: #fff;
   text-align: center;
+  padding: 80px 20px;
 }
 
-/* Main */
+.hero h2 {
+  font-size: 2rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+}
+
+/* Main content */
 main {
   padding: 20px;
-  max-width: 900px;
-  margin: auto;
 }
 
-ul {
-  padding-left: 20px;
+h2 {
+  color: #222;
+  margin-bottom: 10px;
 }
 
 /* Footer */
 footer {
-  background: #2c3e50;
-  color: white;
+  background: #222;
+  color: #fff;
   text-align: center;
-  padding: 10px;
+  padding: 15px;
   margin-top: 20px;
 }
