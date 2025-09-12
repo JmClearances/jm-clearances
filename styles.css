@@ -1,4 +1,4 @@
-/* ===== General Reset ===== */
+/* ===== Reset ===== */
 * {
   margin: 0;
   padding: 0;
@@ -43,7 +43,7 @@ header {
   border-radius: 4px;
 }
 
-/* ===== Dropdown Menu ===== */
+/* ===== Dropdown ===== */
 .submenu {
   display: none;
   position: absolute;
@@ -65,7 +65,7 @@ header {
   display: block;
 }
 
-/* ===== Hero Section ===== */
+/* ===== Hero ===== */
 .hero {
   background: url('hero-image.jpg') no-repeat center center/cover;
   height: 350px;
@@ -78,14 +78,14 @@ header {
   font-weight: bold;
 }
 
-/* ===== Section Titles ===== */
+/* ===== Sections ===== */
 section h2 {
   text-align: center;
   margin-bottom: 20px;
   color: #004080;
 }
 
-/* ===== Cards (services & reviews) ===== */
+/* ===== Cards (Services & Reviews) ===== */
 .card, .review-card {
   background-color: #fff;
   padding: 20px;
@@ -102,7 +102,7 @@ section h2 {
   margin: 0 auto 50px;
 }
 
-/* ===== Contact Section ===== */
+/* ===== Contact ===== */
 .contact-container {
   display: flex;
   flex-wrap: wrap;
