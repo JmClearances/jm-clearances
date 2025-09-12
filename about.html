@@ -5,39 +5,33 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>About Us - JM Clearances</title>
   <link rel="stylesheet" href="style.css">
+  <script>
+    function toggleMenu() {
+      document.querySelector("nav ul").classList.toggle("showing");
+    }
+  </script>
 </head>
 <body>
-  <!-- Navigation -->
-  <nav class="navbar">
-    <div class="logo">JM Clearances</div>
-    <span class="menu-toggle">☰</span>
-    <ul class="nav-links">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About Us</a></li>
-      <li><a href="what-we-do.html">What We Do</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </nav>
+  <header>
+    <nav>
+      <div class="logo">JM Clearances</div>
+      <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="what-we-do.html">What We Do</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-  <!-- Page Content -->
-  <main>
+  <div class="container">
     <h1>About Us</h1>
-    <p>
-      JM Clearances is a trusted clearance company with years of experience
-      helping people across the UK. Whether you need a house, office, or garden
-      cleared, our friendly team is here to make the process simple and stress-free.
-    </p>
-  </main>
+    <p>At JM Clearances, we pride ourselves on being reliable, professional, and efficient in all types of property clearance services.</p>
+  </div>
 
-  <!-- Footer -->
   <footer>
-    <p>&copy; 2025 JM Clearances | All Rights Reserved</p>
+    <p>&copy; 2025 JM Clearances. All rights reserved.</p>
   </footer>
-
-  <script>
-    document.querySelector(".menu-toggle").addEventListener("click", () => {
-      document.querySelector(".nav-links").classList.toggle("active");
-    });
-  </script>
 </body>
 </html>
