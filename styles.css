@@ -77,3 +77,55 @@ footer { background:#004080; color:#fff; text-align:center; padding:15px; margin
   .hero h1 { font-size:2rem; }
   .hero p  { font-size:1rem; }
 }
+/* === Make .dropdown behave like the old .submenu === */
+.menu .dropdown{
+  display:none; position:absolute; top:100%; left:0;
+  background:#004080; padding:0; margin:0; list-style:none;
+  min-width:200px; border-radius:6px; overflow:hidden; z-index:1000;
+}
+.menu li:hover > .dropdown,
+.menu li:focus-within > .dropdown { display:block; }
+.menu .dropdown li{ width:100%; }
+.menu .dropdown a{ padding:10px; font-weight:normal; }
+
+/* === About page layout === */
+.about-intro, .about-points, .about-team, .reviews-form{
+  max-width:1100px; margin:0 auto; padding:30px 20px;
+}
+
+/* Titles */
+.about-intro h1,
+.about-points h2,
+.reviews-form h2{
+  text-align:center; color:#004080; margin-bottom:16px;
+}
+
+/* Card look for text blocks */
+.about-intro p,
+.about-team p,
+.about-points ul,
+.reviews-form form,
+.reviews-form p{
+  background:#fff; padding:20px; border-radius:12px;
+  box-shadow:0 2px 6px rgba(0,0,0,.1);
+}
+
+/* Bullet list styling (keep bullets visible & neat) */
+.about-points ul{
+  list-style:disc; padding-left:1.2rem; /* bullets visible */
+}
+.about-points li{ margin:8px 0; }
+
+/* Re-use the yellow CTA button anywhere (not just hero) */
+.button{
+  display:inline-block; background:#ffb000; color:#1a1a1a;
+  padding:12px 20px; border-radius:6px; font-weight:bold;
+}
+.button:hover{ background:#e39e00; }
+
+/* Review form buttons (matches site style) */
+.reviews-form button{
+  background:#0078d7; color:#fff; border:none; padding:12px 18px;
+  border-radius:6px; font-weight:600; cursor:pointer; transition:background .2s;
+}
+.reviews-form button:hover{ background:#005bb5; }
