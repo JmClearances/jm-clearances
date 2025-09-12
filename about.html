@@ -7,12 +7,11 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
   <!-- Navigation -->
   <nav class="navbar">
     <div class="logo">JM Clearances</div>
-    <div class="menu-toggle" id="menu-toggle">&#9776;</div>
-    <ul class="nav-links" id="nav-links">
+    <span class="menu-toggle">☰</span>
+    <ul class="nav-links">
       <li><a href="index.html">Home</a></li>
       <li><a href="about.html">About Us</a></li>
       <li><a href="what-we-do.html">What We Do</a></li>
@@ -20,15 +19,24 @@
     </ul>
   </nav>
 
-  <section class="content">
+  <!-- Page Content -->
+  <main>
     <h1>About Us</h1>
-    <p>At JM Clearances, we pride ourselves on providing reliable, affordable, and professional clearance services. With years of experience, our team is committed to helping customers reclaim their spaces with ease and efficiency.</p>
-    <p>We handle everything from house and office clearances to garden and garage removals, ensuring a stress-free process for our clients. Our values are built on trust, professionalism, and respect for your property.</p>
-  </section>
+    <p>
+      JM Clearances is a trusted clearance company with years of experience
+      helping people across the UK. Whether you need a house, office, or garden
+      cleared, our friendly team is here to make the process simple and stress-free.
+    </p>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 JM Clearances | All Rights Reserved</p>
+  </footer>
 
   <script>
-    document.getElementById("menu-toggle").addEventListener("click", function() {
-      document.getElementById("nav-links").classList.toggle("active");
+    document.querySelector(".menu-toggle").addEventListener("click", () => {
+      document.querySelector(".nav-links").classList.toggle("active");
     });
   </script>
 </body>
