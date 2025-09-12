@@ -1,23 +1,22 @@
-/* Reset */
-body, h1, h2, h3, p, ul, li {
+/* General Reset */
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Arial, sans-serif;
 }
 
-/* Layout */
 body {
-  background: #f9f9f9;
-  color: #333;
+  font-family: Arial, sans-serif;
   line-height: 1.6;
+  background-color: #f5f7fa;
+  color: #333;
 }
 
 /* Header */
 header {
-  background: #222;
-  color: #fff;
-  padding: 15px;
+  background: linear-gradient(135deg, #005f99, #0099cc);
+  color: white;
+  padding: 20px;
   text-align: center;
 }
 
@@ -25,126 +24,135 @@ header h1 {
   margin-bottom: 10px;
 }
 
-/* Navigation */
 nav ul.menu {
   list-style: none;
-  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
 }
 
 nav ul.menu li {
-  display: inline-block;
   position: relative;
 }
 
-nav ul.menu li a {
-  color: #fff;
-  padding: 10px 15px;
-  display: inline-block;
+nav ul.menu a {
+  color: white;
   text-decoration: none;
+  font-weight: bold;
+  padding: 8px 15px;
+  transition: background 0.3s ease;
 }
 
-nav ul.menu li a:hover,
-nav ul.menu li a.active {
-  background: #4CAF50;
+nav ul.menu a:hover,
+nav ul.menu a.active {
+  background: rgba(255, 255, 255, 0.2);
   border-radius: 4px;
 }
 
 /* Dropdown */
-nav ul.menu li ul.dropdown {
+.dropdown-content {
   display: none;
   position: absolute;
-  background: #333;
-  list-style: none;
-  padding: 0;
-  margin: 0;
+  background: white;
+  min-width: 150px;
+  top: 100%;
+  left: 0;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-nav ul.menu li:hover ul.dropdown {
-  display: block;
-}
-
-nav ul.menu li ul.dropdown li a {
+.dropdown-content li a {
+  color: #005f99;
   display: block;
   padding: 10px;
-  color: #fff;
-  text-decoration: none;
 }
 
-nav ul.menu li ul.dropdown li a:hover {
-  background: #4CAF50;
+.dropdown:hover .dropdown-content {
+  display: block;
 }
 
-/* Hero */
+/* Hero Section */
 .hero {
-  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1600585154340-0e1d08d6f7f4?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80');
-  background-size: cover;
-  background-position: center;
-  color: #fff;
-  padding: 80px 20px;
+  background: url('https://via.placeholder.com/1400x400/005f99/ffffff?text=JM+Clearances') center/cover no-repeat;
+  color: white;
   text-align: center;
+  padding: 80px 20px;
 }
 
-.small-hero {
-  padding: 40px 20px;
-  background: #4CAF50;
-  color: #fff;
-}
-
-/* Page Content */
-.page {
-  max-width: 900px;
-  margin: 30px auto;
-  padding: 20px;
-  background: #fff;
-  border-radius: 6px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-}
-
-.page h2, .page h3 {
+.hero h2 {
+  font-size: 2.5rem;
   margin-bottom: 15px;
-  color: #4CAF50;
 }
 
-.page p, .page ul {
+.hero p {
+  font-size: 1.2rem;
   margin-bottom: 20px;
 }
 
-/* Quotes */
-blockquote {
-  border-left: 4px solid #4CAF50;
-  padding-left: 15px;
-  margin-bottom: 20px;
-  font-style: italic;
-  color: #555;
-}
-
-/* CTA Button */
-.cta-btn {
+/* Buttons */
+.btn {
   display: inline-block;
-  margin-top: 15px;
-  padding: 12px 25px;
-  background: #4CAF50;
-  color: #fff;
-  font-weight: bold;
+  background: #0099cc;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 5px;
   text-decoration: none;
-  border-radius: 4px;
-  transition: background 0.3s;
+  transition: background 0.3s ease;
 }
 
-.cta-btn:hover {
-  background: #45a049;
+.btn:hover {
+  background: #0077aa;
+}
+
+/* Sections */
+section.page,
+section.intro,
+section.services,
+section.reviews {
+  background: white;
+  margin: 30px auto;
+  padding: 25px;
+  max-width: 1000px;
+  border-radius: 8px;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+  color: #005f99;
+  margin-bottom: 15px;
+}
+
+.service {
+  margin-bottom: 20px;
+}
+
+.service h3 {
+  color: #0099cc;
+  margin-bottom: 10px;
+}
+
+/* Reviews */
+.reviews blockquote {
+  border-left: 4px solid #0099cc;
+  padding-left: 15px;
+  margin: 15px 0;
+  font-style: italic;
+  color: #444;
 }
 
 /* Footer */
 footer {
+  background: #003d66;
+  color: white;
   text-align: center;
   padding: 15px;
-  background: #222;
-  color: #fff;
   margin-top: 30px;
 }
 
 footer a {
-  color: #4CAF50;
+  color: #ffdd57;
   text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
 }
