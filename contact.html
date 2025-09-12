@@ -3,48 +3,60 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact Us | JM Clearances</title>
+  <title>Contact Us - JM Clearances</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
-    <h1>JM Clearances</h1>
     <nav>
-      <ul class="menu">
+      <ul>
         <li><a href="index.html">Home</a></li>
-        <li class="dropdown">
-          <a href="#">Services ▼</a>
-          <ul class="dropdown-content">
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="what-we-do.html">What We Do</a></li>
-            <li><a href="contact.html" class="active">Contact</a></li>
-          </ul>
-        </li>
+        <li><a href="what-we-do.html">Services</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
       </ul>
     </nav>
   </header>
 
-  <section class="page">
-    <h2>Contact Us</h2>
-    <p>Get in touch with us today for a free, no-obligation quote. We’re here to make your clearance as easy and stress-free as possible.</p>
+  <main class="container">
+    <h1>Contact Us</h1>
+    <p>We’re here to help. Get in touch with JM Clearances for a free, no-obligation quote or to discuss your clearance needs.</p>
 
-    <h3>📞 Call Us</h3>
-    <p><a href="tel:07523135373">07523 135373</a></p>
+    <section>
+      <h2>📞 Call Us</h2>
+      <p><a href="tel:07523135373">07523 135373</a></p>
+    </section>
 
-    <h3>📧 Email Us</h3>
-    <p><a href="mailto:jmclearances@gmail.com">jmclearances@gmail.com</a></p>
+    <section>
+      <h2>📧 Email Us</h2>
+      <p><a href="mailto:jmclearances@gmail.com">jmclearances@gmail.com</a></p>
+    </section>
 
-    <h3>📍 Areas We Cover</h3>
-    <p>Chester, Warrington, Northwich, Wrexham, Ellesmere Port and surrounding areas.</p>
+    <section>
+      <h2>📍 Areas We Cover</h2>
+      <p>Chester, Warrington, Northwich, Wrexham, Ellesmere Port, and surrounding areas.</p>
+    </section>
 
-    <h3>🕒 Opening Hours</h3>
-    <p>Monday – Saturday: 8am – 6pm<br>Sunday: Closed</p>
+    <section>
+      <h2>📩 Send a Message</h2>
+      <form action="mailto:jmclearances@gmail.com" method="POST" enctype="text/plain">
+        <label for="name">Your Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
 
-    <a href="tel:07523135373" class="btn">Call Now for a Free Quote</a>
-  </section>
+        <label for="email">Your Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="message">Your Message:</label><br>
+        <textarea id="message" name="message" rows="5" required></textarea><br><br>
+
+        <button type="submit" class="button">Send Message</button>
+      </form>
+    </section>
+  </main>
 
   <footer>
-    <p>© 2025 JM Clearances | Call: <a href="tel:07523135373">07523 135373</a> | Email: <a href="mailto:jmclearances@gmail.com">jmclearances@gmail.com</a></p>
+    <p>© 2025 JM Clearances | Call: <a href="tel:07523135373">07523 135373</a> | 
+    Email: <a href="mailto:jmclearances@gmail.com">jmclearances@gmail.com</a></p>
   </footer>
 </body>
 </html>
