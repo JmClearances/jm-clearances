@@ -7,12 +7,11 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
   <!-- Navigation -->
   <nav class="navbar">
     <div class="logo">JM Clearances</div>
-    <div class="menu-toggle" id="menu-toggle">&#9776;</div>
-    <ul class="nav-links" id="nav-links">
+    <span class="menu-toggle">☰</span>
+    <ul class="nav-links">
       <li><a href="index.html">Home</a></li>
       <li><a href="about.html">About Us</a></li>
       <li><a href="what-we-do.html">What We Do</a></li>
@@ -20,21 +19,29 @@
     </ul>
   </nav>
 
-  <section class="content">
+  <!-- Page Content -->
+  <main>
     <h1>What We Do</h1>
-    <p>JM Clearances offers a wide range of clearance services to suit your needs:</p>
+    <p>
+      We offer a wide range of clearance services including:
+    </p>
     <ul>
-      <li><strong>House Clearances:</strong> Full or partial house clearance, including unwanted furniture, appliances, and general clutter.</li>
-      <li><strong>Office Clearances:</strong> Safe and efficient removal of desks, chairs, IT equipment, and more.</li>
-      <li><strong>Garden & Garage Clearances:</strong> Clear out sheds, garages, and outdoor spaces quickly and efficiently.</li>
-      <li><strong>Commercial Clearances:</strong> Professional clearance services for shops, warehouses, and business premises.</li>
+      <li>House Clearances</li>
+      <li>Office Clearances</li>
+      <li>Garden Waste Removal</li>
+      <li>Garage & Loft Clearances</li>
+      <li>General Rubbish Removal</li>
     </ul>
-    <p>No job is too big or small – we’re here to help you reclaim your space.</p>
-  </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 JM Clearances | All Rights Reserved</p>
+  </footer>
 
   <script>
-    document.getElementById("menu-toggle").addEventListener("click", function() {
-      document.getElementById("nav-links").classList.toggle("active");
+    document.querySelector(".menu-toggle").addEventListener("click", () => {
+      document.querySelector(".nav-links").classList.toggle("active");
     });
   </script>
 </body>
