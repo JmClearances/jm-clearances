@@ -3,51 +3,39 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Services | JM Clearances</title>
+  <title>What We Do - JM Clearances</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- Header -->
-  <header>
-    <h1>JM Clearances</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About Us</a>
-      <a href="services.html">Services</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-  </header>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="logo">JM Clearances</div>
+    <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="what-we-do.html">What We Do</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
 
-  <!-- Hero -->
-  <section class="hero">
-    <div class="hero-content">
-      <h2>Our Clearance Services</h2>
-      <p>From single items to full property clearances — we handle it all.</p>
-    </div>
+  <section class="content">
+    <h1>What We Do</h1>
+    <p>JM Clearances offers a wide range of clearance services to suit your needs:</p>
+    <ul>
+      <li><strong>House Clearances:</strong> Full or partial house clearance, including unwanted furniture, appliances, and general clutter.</li>
+      <li><strong>Office Clearances:</strong> Safe and efficient removal of desks, chairs, IT equipment, and more.</li>
+      <li><strong>Garden & Garage Clearances:</strong> Clear out sheds, garages, and outdoor spaces quickly and efficiently.</li>
+      <li><strong>Commercial Clearances:</strong> Professional clearance services for shops, warehouses, and business premises.</li>
+    </ul>
+    <p>No job is too big or small – we’re here to help you reclaim your space.</p>
   </section>
 
-  <!-- Main Content -->
-  <main>
-    <h2>What We Offer</h2>
-    <ul>
-      <li>🏠 Full and partial house clearances</li>
-      <li>🏚 Garage, loft, and shed clearances</li>
-      <li>❤️ Bereavement and sensitive clearances with care</li>
-      <li>♻ Eco-friendly waste disposal and recycling</li>
-      <li>🚛 Same-day or short-notice clearances</li>
-    </ul>
-
-    <p>
-      We aim to make the process as stress-free as possible. Whether it’s clearing clutter, handling a bereavement, or preparing a property for sale, JM Clearances is here to help.
-    </p>
-  </main>
-
-  <!-- Footer -->
-  <footer>
-    <p>📞 07523135373 | 📧 jmclearances@gmail.com</p>
-    <p>&copy; 2025 JM Clearances. All Rights Reserved.</p>
-  </footer>
-
+  <script>
+    document.getElementById("menu-toggle").addEventListener("click", function() {
+      document.getElementById("nav-links").classList.toggle("active");
+    });
+  </script>
 </body>
 </html>
