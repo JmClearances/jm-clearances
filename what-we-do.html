@@ -5,6 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>What We Do | JM Clearances</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; background: #f5f5f5; color: #333; }
+    header, footer { background: #222; color: #fff; padding: 1rem 2rem; }
+    nav ul { list-style: none; display: flex; gap: 1rem; margin: 0; padding: 0; }
+    nav a { color: #fff; text-decoration: none; font-weight: bold; }
+    .section { max-width: 1000px; margin: 3rem auto; padding: 0 1rem; }
+    .service { margin-bottom: 2rem; }
+    .service img { max-width: 100%; border-radius: 10px; }
+  </style>
 </head>
 <body>
   <header>
@@ -12,27 +21,35 @@
     <nav>
       <ul>
         <li><a href="index.html">Home</a></li>
-        <li><a href="what-we-do.html" class="active">What We Do</a></li>
+        <li><a href="what-we-do.html">What We Do</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
   </header>
 
-  <main>
-    <h2>What We Do</h2>
-    <p>At <strong>JM Clearances</strong>, we provide reliable, friendly and affordable property clearance services throughout Cheshire and surrounding areas.</p>
-    <ul>
-      <li>House Clearances</li>
-      <li>Garage & Loft Clearances</li>
-      <li>Office Clearances</li>
-      <li>Garden Waste Removal</li>
-      <li>End of Tenancy Clearances</li>
-    </ul>
-  </main>
+  <section class="section">
+    <h2>Our Services</h2>
+    <div class="service">
+      <h3>House Clearances</h3>
+      <p>Whether moving, downsizing, or handling a bereavement, we provide sensitive and efficient house clearance services.</p>
+      <img src="https://source.unsplash.com/1000x500/?house,interior" alt="House clearance">
+    </div>
+
+    <div class="service">
+      <h3>Office Clearances</h3>
+      <p>We handle everything from old furniture to IT equipment, helping you clear your workspace with minimal disruption.</p>
+      <img src="https://source.unsplash.com/1000x500/?office,workspace" alt="Office clearance">
+    </div>
+
+    <div class="service">
+      <h3>Garden & Outdoor</h3>
+      <p>We clear sheds, garages, and outdoor spaces, leaving them clean, safe, and ready for use.</p>
+      <img src="https://source.unsplash.com/1000x500/?garden,cleaning" alt="Garden clearance">
+    </div>
+  </section>
 
   <footer>
-    <p>&copy; 2025 JM Clearances | Cheshire & Surrounding Areas</p>
-    <p><a href="mailto:jmclearances@gmail.com">jmclearances@gmail.com</a> | <a href="tel:07523135373">07523 135373</a></p>
+    <p>&copy; 2025 JM Clearances | All Rights Reserved</p>
   </footer>
 </body>
 </html>
