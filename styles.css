@@ -70,3 +70,22 @@ footer{text-align:center;background:#0b4ea2;color:#fff;padding:16px;margin-top:4
   .hero{padding:48px 16px}
   .hero h1{font-size:1.8rem}
 }
+/* ===== Page Enrichment ===== */
+.subtle{color:#4a5b70}
+.two-col{display:grid;grid-template-columns:1fr 1fr;gap:26px}
+@media(max-width:900px){.two-col{grid-template-columns:1fr}}
+.pills{display:flex;flex-wrap:wrap;gap:10px}
+.pill{background:#e8f0ff;color:#0b4ea2;border:1px solid #cfe0ff;padding:8px 12px;border-radius:999px;font-weight:700}
+.process{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+@media(max-width:1100px){.process{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:600px){.process{grid-template-columns:1fr}}
+.step{background:#fff;border-left:6px solid #0b4ea2;border-radius:10px;padding:16px 14px;box-shadow:0 6px 18px rgba(0,0,0,.06)}
+.step h4{margin-bottom:6px;color:#0b4ea2}
+.list-check{list-style:none;margin-left:0}
+.list-check li{margin:8px 0;padding-left:28px;position:relative}
+.list-check li::before{content:"✔";position:absolute;left:0;top:0;color:#16a34a;font-weight:900}
+.faq{border-radius:10px;background:#fff;box-shadow:0 6px 18px rgba(0,0,0,.06);padding:18px 20px}
+.faq h4{margin-bottom:8px;color:#0b4ea2}
+.cta-band{background:linear-gradient(135deg,#0b4ea2,#0f6bd6);color:#fff;text-align:center;padding:26px;border-radius:12px}
+.cta-band a{color:#1a1a1a;background:#ffb000;padding:10px 16px;border-radius:8px;font-weight:700;text-decoration:none}
+.cta-band a:hover{background:#e39e00}
