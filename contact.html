@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Contact Us - JM Clearances</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <header>
@@ -25,39 +25,55 @@
     </nav>
   </header>
 
-  <section class="section">
+  <main class="section">
     <h2>Contact JM Clearances</h2>
+
+    <!-- General Contact Form -->
     <div class="card">
-      <form>
-        <input type="text" name="name" placeholder="Your Name" required>
-        <input type="email" name="email" placeholder="Your Email" required>
+      <h3>Send Us a Message</h3>
+      <form action="https://formspree.io/f/xldwvzgl" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
         <textarea name="message" placeholder="Your Message" required></textarea>
+
+        <!-- redirect to thank you page -->
+        <input type="hidden" name="_redirect" value="https://jmclearances.co.uk/thanks.html">
+
         <button type="submit">Send Message</button>
       </form>
     </div>
+
+    <!-- Quote Request Form -->
     <div class="card">
-      <h3>Request a Quote</h3>
-      <form>
-        <input type="text" name="qname" placeholder="Your Name" required>
-        <input type="email" name="qemail" placeholder="Your Email" required>
-        <input type="tel" name="qphone" placeholder="Phone (optional)">
+      <h3>Request a Free Quote</h3>
+      <form action="https://formspree.io/f/xldwvzgl" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <input type="tel" name="phone" placeholder="Phone Number (optional)" />
         <select name="service" required>
           <option value="">Select a Service</option>
           <option>House Clearance</option>
           <option>Office Clearance</option>
           <option>Bereavement Clearance</option>
+          <option>Other</option>
         </select>
-        <textarea name="qdetails" placeholder="Details of the clearance (e.g. size, location)" required></textarea>
+        <textarea name="details" placeholder="Tell us about the clearance" required></textarea>
+
+        <!-- redirect to thank you page -->
+        <input type="hidden" name="_redirect" value="https://jmclearances.co.uk/thanks.html">
+
         <button type="submit">Request Quote</button>
       </form>
     </div>
+
+    <!-- Contact Info -->
     <div class="card">
-      <h3>Contact Details</h3>
-      <p><strong>Email:</strong> jmclearances@gmail.com</p>
-      <p><strong>Phone:</strong> 07593 135373</p>
-      <p>We cover Cheshire and surrounding areas and aim to reply promptly.</p>
+      <h3>Other Ways to Reach Us</h3>
+      <p><strong>Email:</strong> <a href="mailto:jmclearances@gmail.com">jmclearances@gmail.com</a></p>
+      <p><strong>Phone:</strong> <a href="tel:07593135373">07593 135373</a></p>
+      <p>We cover Cheshire and surrounding areas. We aim to reply quickly.</p>
     </div>
-  </section>
+  </main>
 
   <footer>
     <p>© 2025 JM Clearances</p>
