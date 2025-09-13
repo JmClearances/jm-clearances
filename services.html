@@ -41,6 +41,31 @@
     </div>
   </section>
 
+  <!-- Quote Request Form -->
+  <section class="section">
+    <div class="card">
+      <h3>Request a Free Quote</h3>
+      <form action="https://formspree.io/f/xldwvzgl" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <input type="tel" name="phone" placeholder="Phone Number (optional)" />
+        <select name="service" required>
+          <option value="">Select a Service</option>
+          <option>House Clearance</option>
+          <option>Office Clearance</option>
+          <option>Bereavement Clearance</option>
+          <option>Other</option>
+        </select>
+        <textarea name="details" placeholder="Tell us about the clearance" required></textarea>
+
+        <!-- Redirect to thank you page -->
+        <input type="hidden" name="_redirect" value="https://jmclearances.co.uk/thanks.html">
+
+        <button type="submit">Request Quote</button>
+      </form>
+    </div>
+  </section>
+
   <footer>
     <p>© 2025 JM Clearances</p>
   </footer>
